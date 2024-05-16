@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>司法書士 小牟田毅</title>
+    <link rel="stylesheet" href="https://unpkg.com/ress@5.0.2/dist/ress.min.css">
+    <link rel="stylesheet" href="./css/com.css">
+    <link rel="icon" type="image/ico" href="./image/komuta-favicon .ico">
+    
+</head>
+<body>
+    <header class="page-header wrapper">
+        <h1><a href="https://shiho-com.com/"><img class="logo" src="./image/office-logo.png" alt="司法書士 小牟田毅"></a></h1>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#about-me">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="office" class="big-bg01">
+        <div class="padding"></div>
+        <div class="office-content wrapper">
+            <h2 class="office-title">COMMUNICATIONは<br>不安を安心に変えることができる。</h2>
+            <p>会社法務と相続の専門家が親切丁寧に対応！<br>天神南駅から徒歩２分の司法書士事務所です。</p>
+            <a class="button" href="https://shiho-com.com/">COM事務所のWebサイトへ</a>
+        </div>
+        <!-- /.office-content -->
+    </div>
+
+    <div id="about-us" class="wrapper">
+        <div class="our-content">
+            <img src="./image/office-image01.png" alt="">
+            <h3>当事務所の特徴その１</h3>
+            <p>　<span style="font-weight: bold;">会社の法務</span>と<span style="font-weight: bold;">相続</span>の専門性が高い事務所です。</p>
+            <p>　会社の法務は、法人設立や役員変更はもちろん、代表の小牟田は<span style="font-weight: bold;">ストックオプションの発行</span>、<span style="font-weight: bold;">種類株式を用いた事業承継</span>のサポート実績も豊富です。</p>
+            <p>　相続は、相続発生後の不動産の名義変更はもちろん、<span style="font-weight: bold;">相続発生前の生前対策コンサルティング</span>も可能です。</p>
+            <p>　是非、お気軽にご相談ください。</p>
+        </div>
+        <div class="our-content">
+            <img src="./image/office-image02.png" alt="">
+            <h3>当事務所の特徴その２</h3>
+            <p>　<span style="font-weight: bold;">デジタルに強い事務所</span>です。新しいことにも積極的にチャレンジします！</p>
+            <p>　お打ち合わせは事務所にご来所いただいての対面のほか、オンラインでのお打ち合わせも可能です。</p>
+            <p>　また、代表の小牟田は<span style="font-weight: bold;">G’sアカデミー福岡校</span>に在籍しており、プログラミングを学び中であり、世の中をもっと便利にしたいと考え奮闘中です。</p>
+            <p>　是非、お気軽にご相談ください。</p>
+        </div>
+    </div>
+
+    <!-- 固定背景画像の表示 -->
+    <div class="parallax"></div>
+
+    <!-- 個人の紹介 -->
+    <div id="about-me" class="about-me wrapper">
+        <article>
+            <header>
+                <h2 class="my-name">小牟田　毅</h2>
+                <p class="my-job">職業：司法書士（G'sアカデミー福岡校　DEV15所属）</p>
+            </header>
+            <img src="./image/tsuyoshi_komuta.JPG" alt="小牟田毅">
+        </article>
+
+        <aside>
+            <p class="my-profile">Date of Birth</p>
+            <p class="my-profile01">　1973/11/19（age:50）</p><br>
+
+            <p class="my-profile">Blood Type</p>
+            <p class="my-profile01">　A型</p><br>
+
+            <p class="my-profile">Place of Birth</p>
+            <p class="my-profile01">　大分県大分市</p><br>
+
+            <p class="my-profile">Highest Educational Qualification</p>
+            <p class="my-profile01">　九州大学経済学府　産業マネジメント専攻（MBA）</p><br>
+
+            <p class="my-profile">Hobbies</p>
+            <p class="my-profile01">　B級グルメ食べ歩き（孤独のグルメ好き）　犬の散歩<br>ファミコンなど昔のゲーム</p><br>
+
+            <p class="my-profile">Family Structure</p>
+            <p class="my-profile01">　妻、子供3名</p><br>
+
+            <p class="my-profile">Favorite Words</p>
+            <p class="my-profile01">　「座右の銘」<br>　為せば成る　為さねば成らぬ何事も<br>　成らぬは人の為さぬなりけり（上杉鷹山）</p><br>
+
+            <p class="my-profile">Favorite Food</p>
+            <p class="my-profile01">　ラーメン　カレー　肉類全般</p><br>
+            <p class="my-profile">Favorite Book</p>
+            <p class="my-profile01">　ミステリー（東野圭吾ファン）、グルメ漫画（美味しんぼ・クッキングパパ全巻保有）</p>
+        </aside>
+    </div>
+
+    <!-- コメント欄 -->
+    <div class="comment-section wrapper">
+        <h3>コメントを入力</h3>
+        <form id="commentForm">
+            <input type="text" name="name" id="nameInput" placeholder="名前を入力" required>
+            <textarea name="comment" id="commentInput" placeholder="コメントを入力" required></textarea>
+            <button type="submit">送信</button>
+        </form>
+        <div id="commentsContainer"></div>
+    </div>
+    
+    <!-- jQueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./comments.js"></script>
+
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2024 Tsuyoshi Komuta</small></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
